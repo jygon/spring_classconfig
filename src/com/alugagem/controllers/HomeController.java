@@ -18,4 +18,11 @@ public class HomeController {
 		mv.addObject("nome",nome);
 		return mv;
 	}
+	
+	@RequestMapping("/world")
+	public ModelAndView world(String pais){
+		ModelAndView mv = new ModelAndView("hello-world");
+		mv.addObject("pais",pais);
+		return mv;
+	}
 }
